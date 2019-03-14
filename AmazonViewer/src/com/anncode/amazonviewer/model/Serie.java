@@ -15,8 +15,6 @@ public class Serie extends Film {
 		this.sessionQuantity = sessionQuantity;
 	}
 	
-	
-
 	public int getId() {
 		return id;
 	}
@@ -59,6 +57,13 @@ public class Serie extends Film {
 		}
 		
 		return series;
+	}
+
+
+
+	@Override
+	public void view() {
+		setViewed(true);
 	}
 	
 }
